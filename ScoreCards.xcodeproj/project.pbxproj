@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8024DF91268730EF00020691 /* ScoreCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DF90268730EF00020691 /* ScoreCardsApp.swift */; };
+		8024DF95268730F400020691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8024DF94268730F400020691 /* Assets.xcassets */; };
+		8024DF98268730F400020691 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8024DF97268730F400020691 /* Preview Assets.xcassets */; };
+		8024DFA826873AE200020691 /* NewScoreForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFA726873AE200020691 /* NewScoreForm.swift */; };
+		8024DFAB26873EA400020691 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFAA26873EA400020691 /* CustomCorners.swift */; };
+		8024DFAD26873F1500020691 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFAC26873F1500020691 /* ScoreView.swift */; };
+		8024DFAF26873FF700020691 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFAE26873FF700020691 /* Score.swift */; };
+		8024DFB12687431800020691 /* BgCardScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFB02687431800020691 /* BgCardScore.swift */; };
+		8024DFB32687448A00020691 /* ScoreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFB22687448A00020691 /* ScoreListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8024DF8D268730EF00020691 /* ScoreCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8024DF90268730EF00020691 /* ScoreCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCardsApp.swift; sourceTree = "<group>"; };
+		8024DF94268730F400020691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8024DF97268730F400020691 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8024DF99268730F400020691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8024DFA726873AE200020691 /* NewScoreForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScoreForm.swift; sourceTree = "<group>"; };
+		8024DFAA26873EA400020691 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
+		8024DFAC26873F1500020691 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		8024DFAE26873FF700020691 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		8024DFB02687431800020691 /* BgCardScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgCardScore.swift; sourceTree = "<group>"; };
+		8024DFB22687448A00020691 /* ScoreListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8024DF8A268730EF00020691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8024DF84268730EE00020691 = {
+			isa = PBXGroup;
+			children = (
+				8024DF8F268730EF00020691 /* ScoreCards */,
+				8024DF8E268730EF00020691 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8024DF8E268730EF00020691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8024DF8D268730EF00020691 /* ScoreCards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8024DF8F268730EF00020691 /* ScoreCards */ = {
+			isa = PBXGroup;
+			children = (
+				8024DF90268730EF00020691 /* ScoreCardsApp.swift */,
+				8024DFA62687383A00020691 /* Model */,
+				8024DFA42687382100020691 /* ViewModel */,
+				8024DFA52687382B00020691 /* View */,
+				8024DFA32687380700020691 /* Repositories */,
+				8024DFA2268737FA00020691 /* Services */,
+				8024DFA926873E7F00020691 /* Helper */,
+				8024DFA1268737A100020691 /* System32 */,
+			);
+			path = ScoreCards;
+			sourceTree = "<group>";
+		};
+		8024DF96268730F400020691 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8024DF97268730F400020691 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8024DFA1268737A100020691 /* System32 */ = {
+			isa = PBXGroup;
+			children = (
+				8024DF94268730F400020691 /* Assets.xcassets */,
+				8024DF99268730F400020691 /* Info.plist */,
+				8024DF96268730F400020691 /* Preview Content */,
+			);
+			path = System32;
+			sourceTree = "<group>";
+		};
+		8024DFA2268737FA00020691 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8024DFA32687380700020691 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8024DFA42687382100020691 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8024DFA52687382B00020691 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8024DFA726873AE200020691 /* NewScoreForm.swift */,
+				8024DFAC26873F1500020691 /* ScoreView.swift */,
+				8024DFB22687448A00020691 /* ScoreListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8024DFA62687383A00020691 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8024DFAE26873FF700020691 /* Score.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8024DFA926873E7F00020691 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8024DFAA26873EA400020691 /* CustomCorners.swift */,
+				8024DFB02687431800020691 /* BgCardScore.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8024DF8C268730EF00020691 /* ScoreCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8024DF9C268730F400020691 /* Build configuration list for PBXNativeTarget "ScoreCards" */;
+			buildPhases = (
+				8024DF89268730EF00020691 /* Sources */,
+				8024DF8A268730EF00020691 /* Frameworks */,
+				8024DF8B268730EF00020691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScoreCards;
+			productName = ScoreCards;
+			productReference = 8024DF8D268730EF00020691 /* ScoreCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8024DF85268730EE00020691 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					8024DF8C268730EF00020691 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 8024DF88268730EE00020691 /* Build configuration list for PBXProject "ScoreCards" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8024DF84268730EE00020691;
+			productRefGroup = 8024DF8E268730EF00020691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8024DF8C268730EF00020691 /* ScoreCards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8024DF8B268730EF00020691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8024DF98268730F400020691 /* Preview Assets.xcassets in Resources */,
+				8024DF95268730F400020691 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8024DF89268730EF00020691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8024DF91268730EF00020691 /* ScoreCardsApp.swift in Sources */,
+				8024DFAD26873F1500020691 /* ScoreView.swift in Sources */,
+				8024DFAB26873EA400020691 /* CustomCorners.swift in Sources */,
+				8024DFA826873AE200020691 /* NewScoreForm.swift in Sources */,
+				8024DFB32687448A00020691 /* ScoreListView.swift in Sources */,
+				8024DFAF26873FF700020691 /* Score.swift in Sources */,
+				8024DFB12687431800020691 /* BgCardScore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8024DF9A268730F400020691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8024DF9B268730F400020691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8024DF9D268730F400020691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ScoreCards/System32/Preview Content\"";
+				DEVELOPMENT_TEAM = 879U287R5Q;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ScoreCards/System32/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ihValery.ScoreCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8024DF9E268730F400020691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ScoreCards/System32/Preview Content\"";
+				DEVELOPMENT_TEAM = 879U287R5Q;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ScoreCards/System32/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ihValery.ScoreCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8024DF88268730EE00020691 /* Build configuration list for PBXProject "ScoreCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8024DF9A268730F400020691 /* Debug */,
+				8024DF9B268730F400020691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8024DF9C268730F400020691 /* Build configuration list for PBXNativeTarget "ScoreCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8024DF9D268730F400020691 /* Debug */,
+				8024DF9E268730F400020691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8024DF85268730EE00020691 /* Project object */;
+}
