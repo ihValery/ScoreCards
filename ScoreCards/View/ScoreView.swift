@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct ScoreView: View {
-    var score: Score
+    var scoreViewModel: ScoreViewModel
     
     var body: some View {
         ZStack {
             HStack {
-                Text(score.theme)
+                Text(scoreViewModel.score.theme)
                     .font(.system(size: 60))
                     .padding(.trailing)
                 
                 VStack(alignment: .leading) {
                     Text("Результат  ")
                         .font(.title)
-                    Text(dateToString(score.date))
+                    Text(dateToString(scoreViewModel.score.date))
                         .font(.subheadline).opacity(0.6)
                 }
                 .opacity(0.6)
@@ -29,7 +29,7 @@ struct ScoreView: View {
             
             HStack {
                 Spacer()
-                Text(String(score.maxScore))
+                Text(String(scoreViewModel.score.maxScore))
                     .font(.system(size: 50).bold())
                     .opacity(0.7)
                     .padding()
@@ -53,6 +53,6 @@ struct ScoreView: View {
 struct ScoreView_Previews: PreviewProvider {
     static var previews: some View {
         let score = testData[5]
-        ScoreView(score: score)
+        ScoreView(scoreViewModel: ScoreViewModel(score: score))
     }
 }

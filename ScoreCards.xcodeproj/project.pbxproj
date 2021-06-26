@@ -24,6 +24,7 @@
 		8024DFC226874F5200020691 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 8024DFC126874F5200020691 /* FirebaseStorageSwift-Beta */; };
 		8024DFC42687535900020691 /* ScoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFC32687535900020691 /* ScoreRepository.swift */; };
 		8024DFC62687603700020691 /* ScoreListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFC52687603700020691 /* ScoreListViewModel.swift */; };
+		8024DFC8268765A000020691 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFC7268765A000020691 /* ScoreViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		8024DFB626874D6B00020691 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8024DFC32687535900020691 /* ScoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRepository.swift; sourceTree = "<group>"; };
 		8024DFC52687603700020691 /* ScoreListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreListViewModel.swift; sourceTree = "<group>"; };
+		8024DFC7268765A000020691 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				8024DFC52687603700020691 /* ScoreListViewModel.swift */,
+				8024DFC7268765A000020691 /* ScoreViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8024DF91268730EF00020691 /* ScoreCardsApp.swift in Sources */,
+				8024DFC8268765A000020691 /* ScoreViewModel.swift in Sources */,
 				8024DFC42687535900020691 /* ScoreRepository.swift in Sources */,
 				8024DFAD26873F1500020691 /* ScoreView.swift in Sources */,
 				8024DFAB26873EA400020691 /* CustomCorners.swift in Sources */,
