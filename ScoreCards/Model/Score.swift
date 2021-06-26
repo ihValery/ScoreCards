@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Score: Identifiable {
+struct Score: Identifiable, Codable {
     var id: String = UUID().uuidString
     var theme: String
     var maxScore: String
