@@ -22,7 +22,8 @@
 		8024DFBE26874F5200020691 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8024DFBD26874F5200020691 /* FirebaseAuth */; };
 		8024DFC026874F5200020691 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8024DFBF26874F5200020691 /* FirebaseFirestore */; };
 		8024DFC226874F5200020691 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 8024DFC126874F5200020691 /* FirebaseStorageSwift-Beta */; };
-		8024DFC42687535900020691 /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFC32687535900020691 /* CardRepository.swift */; };
+		8024DFC42687535900020691 /* ScoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFC32687535900020691 /* ScoreRepository.swift */; };
+		8024DFC62687603700020691 /* ScoreListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFC52687603700020691 /* ScoreListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +39,8 @@
 		8024DFB02687431800020691 /* BgCardScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgCardScore.swift; sourceTree = "<group>"; };
 		8024DFB22687448A00020691 /* ScoreListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreListView.swift; sourceTree = "<group>"; };
 		8024DFB626874D6B00020691 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8024DFC32687535900020691 /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
+		8024DFC32687535900020691 /* ScoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRepository.swift; sourceTree = "<group>"; };
+		8024DFC52687603700020691 /* ScoreListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +119,7 @@
 		8024DFA32687380700020691 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				8024DFC32687535900020691 /* CardRepository.swift */,
+				8024DFC32687535900020691 /* ScoreRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -125,6 +127,7 @@
 		8024DFA42687382100020691 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8024DFC52687603700020691 /* ScoreListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -237,12 +240,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8024DF91268730EF00020691 /* ScoreCardsApp.swift in Sources */,
-				8024DFC42687535900020691 /* CardRepository.swift in Sources */,
+				8024DFC42687535900020691 /* ScoreRepository.swift in Sources */,
 				8024DFAD26873F1500020691 /* ScoreView.swift in Sources */,
 				8024DFAB26873EA400020691 /* CustomCorners.swift in Sources */,
 				8024DFA826873AE200020691 /* NewScoreForm.swift in Sources */,
 				8024DFB32687448A00020691 /* ScoreListView.swift in Sources */,
 				8024DFAF26873FF700020691 /* Score.swift in Sources */,
+				8024DFC62687603700020691 /* ScoreListViewModel.swift in Sources */,
 				8024DFB12687431800020691 /* BgCardScore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
