@@ -36,7 +36,7 @@ struct ScoreListView: View {
             }
         }
         .sheet(isPresented: $showForm) {
-            NewScoreForm()
+            NewScoreForm(scoreListViewModel: ScoreListViewModel())
         }
     }
 }

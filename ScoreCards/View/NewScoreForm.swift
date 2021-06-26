@@ -11,6 +11,7 @@ struct NewScoreForm: View {
     @State private var newMaxScore = ""
     @State private var pickerSelect = ""
     @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var scoreListViewModel: ScoreListViewModel
     
     var body: some View {
         VStack {
@@ -34,14 +35,20 @@ struct NewScoreForm: View {
             .padding()
             
             Button("Добавить новый счет") {
-                presentationMode.wrappedValue.dismiss()
+                addScore()
             }
         }
+    }
+    
+    private func addScore() {
+        let score = Score(theme: pickerSelect, maxScore: newMaxScore)
+        scoreListViewModel.add(score)
+        presentationMode.wrappedValue.dismiss()
     }
 }
 
 struct NewScoreForm_Previews: PreviewProvider {
     static var previews: some View {
-        NewScoreForm()
+        NewScoreForm(scoreListViewModel: ScoreListViewModel())
     }
 }
