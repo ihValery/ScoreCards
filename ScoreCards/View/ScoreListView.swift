@@ -26,10 +26,10 @@ struct ScoreListView: View {
                 HStack {
                     Spacer()
                     Button(action: { showForm.toggle() }) {
-                        Text("+")
-                            .padding()
+                        Image(systemName: "plus")
                             .font(.largeTitle)
-                            .foregroundColor(.white)
+                            .accentColor(.white)
+                            .padding()
                             .background(Circle().fill(Color.red))
                     }
                 }.padding(.horizontal)

@@ -24,4 +24,8 @@ class ScoreListViewModel: ObservableObject {
     func add(_ score: Score) {
         scoreRepository.add(score)
     }
+    
+    func update(_ score: Score) {
+        scoreRepository.update(score)
+    }
 }
