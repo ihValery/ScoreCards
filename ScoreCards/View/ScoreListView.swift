@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ScoreListView: View {
-    var scores: [Score] = []
+    @ObservedObject var scoreListViewModel = ScoreListViewModel()
     @State private var showForm = false
     
     var body: some View {
         ZStack {
             VStack {
                 ScrollView(.vertical) {
-                    ForEach(scores, id: \.id) { item in
-                        ScoreView(score: item)
+                    ForEach(scoreListViewModel.scoreViewModels) { item in
+                        ScoreView(scoreViewModel: item)
                     }
                 }
             }
@@ -35,6 +35,7 @@ struct ScoreListView: View {
                 }.padding(.horizontal)
             }
         }
+        
         .sheet(isPresented: $showForm) {
             NewScoreForm(scoreListViewModel: ScoreListViewModel())
         }
@@ -43,6 +44,6 @@ struct ScoreListView: View {
 
 struct ScoreListView_Previews: PreviewProvider {
     static var previews: some View {
-        ScoreListView(scores: testData)
+        ScoreListView(scoreListViewModel: ScoreListViewModel())
     }
 }
