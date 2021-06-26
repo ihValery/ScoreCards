@@ -6,17 +6,18 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
 struct Score: Identifiable, Codable {
-    var id: String = UUID().uuidString
+    @DocumentID var id: String?
     var theme: String
-    var maxScore: String
+    var maxScore: Int
     var date = Date()
     var userId: String?
 }
 
 #if DEBUG
 let testData = (1...10).map { item in
-    Score(theme: "🧑🏽‍🚒", maxScore: "\(item)")
+    Score(theme: "🧑🏽‍🚒", maxScore: -99)
 }
 #endif

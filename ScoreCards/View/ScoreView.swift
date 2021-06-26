@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ScoreView: View {
     var scoreViewModel: ScoreViewModel
+    @State var viewState = CGSize.zero
+    @State var showAlert = false
     
     var body: some View {
         ZStack {
             HStack {
                 Text(scoreViewModel.score.theme)
                     .font(.system(size: 60))
-                    .padding(.trailing)
                 
                 VStack(alignment: .leading) {
                     Text("Результат  ")
@@ -32,7 +33,6 @@ struct ScoreView: View {
                 Text(String(scoreViewModel.score.maxScore))
                     .font(.system(size: 50).bold())
                     .opacity(0.7)
-                    .padding()
             }
         }
         
@@ -40,6 +40,24 @@ struct ScoreView: View {
         .padding(.horizontal, 40)
         .background(BgCardScore())
         .padding(.vertical, 35).padding(.leading, 10)
+        
+        .gesture(
+            DragGesture()
+                .onChanged { value in
+                    viewState = value.translation
+                }
+                .onEnded { value in
+                    if value.location.x < value.startLocation.x - 40 {
+                        showAlert.toggle()
+                    }
+                    viewState = .zero
+                })
+        
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Удалить счет"), message: Text("Это действие нельзу будет отменить"),
+                  primaryButton: .destructive(Text("Удалить")) { scoreViewModel.remove() },
+                  secondaryButton: .cancel(Text("Нет")))
+        }
     }
     
     private func dateToString(_ date: Date) -> String {

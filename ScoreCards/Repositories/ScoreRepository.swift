@@ -21,7 +21,7 @@ class ScoreRepository: ObservableObject {
         get()
     }
     
-    func get() {
+    private func get() {
         store.collection(path).addSnapshotListener { querySnapshot, error in
             if let error = error {
                 print("Ошибка при получении карточек: \(error.localizedDescription)")
@@ -40,6 +40,26 @@ class ScoreRepository: ObservableObject {
             _ = try store.collection(path).addDocument(from: score)
         } catch {
             fatalError("Невозможно добавить карту: \(error.localizedDescription)")
+        }
+    }
+    
+    func update(_ score: Score) {
+        guard let scoreId = score.id else { return }
+        
+        do {
+            try store.collection(path).document(scoreId).setData(from: score)
+        } catch {
+            fatalError("Невозможно обновить карту: \(error.localizedDescription)")
+        }
+    }
+    
+    func remove(_ score: Score) {
+        guard let scoreId = score.id else { return }
+        
+        store.collection(path).document(scoreId).delete() { error in
+            if let error = error {
+                print("Невозможно удалить карту: \(error.localizedDescription)")
+            }
         }
     }
 }
