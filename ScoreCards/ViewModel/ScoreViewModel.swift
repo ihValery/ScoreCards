@@ -28,4 +28,6 @@ class ScoreViewModel: ObservableObject, Identifiable {
     func remove() {
         scoreRepository.remove(score)
     }
+    
+    
 }
