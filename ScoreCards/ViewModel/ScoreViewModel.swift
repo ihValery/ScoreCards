@@ -5,6 +5,7 @@
 //  Created by Валерий Игнатьев on 26.06.21.
 //
 
+import Foundation
 import Combine
 
 class ScoreViewModel: ObservableObject, Identifiable {
@@ -16,7 +17,7 @@ class ScoreViewModel: ObservableObject, Identifiable {
     
     init(score: Score) {
         self.score = score
-        //Настройте привязку card между карточкой id и моделью представления id.
+        //Настройте привязку score между карточкой id и моделью представления id.
         //Затем сохраните объект cancellables чтобы его можно было отменить позже.
         $score
             .compactMap { $0.id }
@@ -29,5 +30,10 @@ class ScoreViewModel: ObservableObject, Identifiable {
         scoreRepository.remove(score)
     }
     
-    
+    func dateToString() -> String {
+        let timeFormatter = DateFormatter()
+        timeFormatter.timeStyle = .short
+        timeFormatter.dateStyle = .short
+        return timeFormatter.string(from: score.date)
+    }
 }

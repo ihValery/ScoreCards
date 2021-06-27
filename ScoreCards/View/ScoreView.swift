@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ScoreView: View {
     var scoreViewModel: ScoreViewModel
-    @State var viewState = CGSize.zero
-    @State var showAlert = false
+    @State private var viewState = CGSize.zero
+    @State private var showAlert = false
     
     var body: some View {
         ZStack {
@@ -21,7 +21,7 @@ struct ScoreView: View {
                 VStack(alignment: .leading) {
                     Text("Результат  ")
                         .font(.title)
-                    Text(dateToString(scoreViewModel.score.date))
+                    Text(scoreViewModel.dateToString())
                         .font(.subheadline).opacity(0.6)
                 }
                 .opacity(0.6)
@@ -58,13 +58,6 @@ struct ScoreView: View {
                   primaryButton: .destructive(Text("Удалить")) { scoreViewModel.remove() },
                   secondaryButton: .cancel(Text("Нет")))
         }
-    }
-    
-    private func dateToString(_ date: Date) -> String {
-        let timeFormatter = DateFormatter()
-        timeFormatter.timeStyle = .short
-        timeFormatter.dateStyle = .short
-        return timeFormatter.string(from: date)
     }
 }
 
