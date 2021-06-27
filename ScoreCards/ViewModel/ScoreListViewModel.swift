@@ -25,18 +25,18 @@ class ScoreListViewModel: ObservableObject {
         guard let number = Int(number) else { return }
         
         guard let currentIndex = searchIndex(theme: theme) else {
-            scoreRepository.add(Score(theme: theme, maxScore: number))
+            let updateScore = Score(theme: theme, maxScore: number)
+            scoreRepository.add(updateScore)
             return
         }
-        
-        newScoreGreaterTheOld(number: number, index: currentIndex)
+        newScoreGreaterOld(number: number, index: currentIndex)
     }
     
-    func update(_ score: Score) {
+    private func update(_ score: Score) {
         scoreRepository.update(score)
     }
     
-    private func newScoreGreaterTheOld(number: Int, index: Int) {
+    private func newScoreGreaterOld(number: Int, index: Int) {
         if number > scoreViewModels[index].score.maxScore {
             var updateScore = scoreViewModels[index].score
             updateScore.maxScore = number
@@ -53,5 +53,4 @@ class ScoreListViewModel: ObservableObject {
         }
         return nil
     }
-    
 }
